@@ -1,2 +1,3 @@
 # Front
-[![Build Status](https://travis-ci.org/MDIORotaractTI/Front.svg?branch=master)](https://travis-ci.org/MDIORotaractTI/Front)
+<!-- Status do TravisCI -->
+[![Build Status](https://travis-ci.org/MDIORotaractTI/Front.svg?branch=master)](https://travis-ci.org/MDIORotaractTI/Front)](https://travis-ci.org/github/MDIORotaractTI/Front)
