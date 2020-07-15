@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/base.css">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 
     <title>MDIO</title>
 </head>
 <body>
     <nav>
         <a href="../index.html" class="navbar-brand">
-            <img class="logo" src="images/mdio-logo.svg" alt="">
+            <img class="logo" src="../images/mdio-logo.svg" alt="">
           </a>
         <label for="btn" class="icon">
             <span class="fa fa-bars"></span>
         </label>
         <input type="checkbox" id="btn">
         <ul>
-            <li><a href="#">INICIO</a></li>
             <li>
                 <label for="btn-1" class="show">QUEM SOMOS +</label>
                 <a href="#">QUEM SOMOS</a>
@@ -28,11 +27,11 @@
                 <ul>
                     <li><a href="#">Rotaract Brasil</a></li>
                     <li><a href="#">Estrutura</a></li>
-                    <li><a href="#">Galeria de Presidentes</a></li>
-                    <li><a href="#">Reconhecimento</a></li>
+                    <!-- <li><a href="#">Galeria de Presidentes</a></li>
+                    <li><a href="#">Reconhecimento</a></li> -->
                 </ul>
             </li>
-            <li>
+          <!--  <li>
                 <label for="btn-2" class="show">COMUNICADOS +</label>
                 <a href="#">COMUNICADOS</a>
                 <input type="checkbox" id="btn-2">
@@ -41,27 +40,11 @@
                     <li><a href="#">Eventos</a></li>
                 </ul>
             </li>
-            <li><a href="#">ENCONTRE UM CLUBE</a></li>
+            <li><a href="#">ENCONTRE UM CLUBE</a></li> -->
             <li><a href="#">ASSOCIADOS</a></li>
         </ul>
     </nav>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            // Transition effect for navbar 
-            $(window).scroll(function() {
-            // checks if window is scrolled more than 500px, adds/removes solid class
-            if($(this).scrollTop() > 100) { 
-                $('nav,ul li').addClass('solid');
-            } else {
-                $('nav,ul li').removeClass('solid');
-            }
-            });
-        });
-    </script>
-
-
-    <img src="thumb-1920-1033762.jpg" id="fundo" alt="jojo">
+    
 
     <div>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
@@ -78,26 +61,7 @@
         
     </div>
 
-    <div class="wrapper">
-        <div class="slider">
-          <div class="slide">
-            <img src="images/Partners/bj-logo.png" id="partners"/>
-            <img src="images/Partners/fe-logo.png" id="partners"/>
-            <img src="images/Partners/ic-logo.png" id="partners"/>
-            <img src="images/Partners/rb-logo.png" id="partners"/>
-            <img src="images/Partners/ribo-logo.png" id="partners"/>
-          </div>
-          <div class="slide">
-            <img src="images/Partners/bj-logo.png" id="partners"/>
-            <img src="images/Partners/fe-logo.png" id="partners"/>
-            <img src="images/Partners/ic-logo.png" id="partners"/>
-            <img src="images/Partners/rb-logo.png" id="partners"/>
-            <img src="images/Partners/ribo-logo.png" id="partners"/>
-          </div>
-        </div>
-    </div>
 
-    <!-- FOOTER -->
     <footer>
         <div class="up-section">
             <a href="#" class="f-logo">MDIO</a>
@@ -106,34 +70,34 @@
                 <h1>Quem Somos</h1>
                 <li><a href="#">Rotaract Brasil</a></li>
                 <li><a href="#">Estruturaa</a></li>
-                <li><a href="#">Galeria de Presidentes</a></li>
-                <li><a href="#">Reconhecimento</a></li>
+           <!-- <li><a href="#">Galeria de Presidentes</a></li>
+                <li><a href="#">Reconhecimento</a></li> -->
             </ol>
 
-            <ol>
+         <!--   <ol>
                 <h1>Comunicados</h1>
                 <li><a href="#">Noticias</a></li>
                 <li><a href="#">Eventos</a></li>
-            </ol>
+            </ol>  -->
 
             <!-- social -->
             <div class="social">
                 <h1>Social</h1>
                 <div class="social-icons">
                     <div class="transp">
-                        <img src="images/Footer/fb-icon.svg" alt="facebook" class="image">
+                        <img src="../images/Footer/fb-icon.svg" alt="facebook" class="image">
                       </div>
                     <span class="transp">
-                        <img src="images/Footer/ig-icon.svg" alt="" class="image">
+                        <img src="../images/Footer/ig-icon.svg" alt="" class="image">
                     </span>
                     <span class="transp">
-                        <img src="images/Footer/in-icon.svg" alt="" class="image">
+                        <img src="../images/Footer/in-icon.svg" alt="" class="image">
                     </span>
                     <span class="transp">
-                        <img src="images/Footer/tt-icon.svg" alt="" class="image">
+                        <img src="../images/Footer/tt-icon.svg" alt="" class="image">
                     </span>
                     <span class="transp">
-                        <img src="images/Footer/yt-icon.svg" alt="" class="image">
+                        <img src="../images/Footer/yt-icon.svg" alt="" class="image">
                     </span>   
                    
                 </div>
@@ -147,15 +111,15 @@
                 <h1>Quem Somos</h1>
                 <li><a href="#">Rotaract Brasil</a></li>
                 <li><a href="#">Estruturaa</a></li>
-                <li><a href="#">Galeria de Presidentes</a></li>
-                <li><a href="#">Reconhecimento</a></li>
+           <!-- <li><a href="#">Galeria de Presidentes</a></li>
+                <li><a href="#">Reconhecimento</a></li> -->
             </ol>
 
-            <ol>
+         <!--   <ol>
                 <h1>Comunicados</h1>
                 <li><a href="#">Noticias</a></li>
                 <li><a href="#">Eventos</a></li>
-            </ol>
+            </ol> -->
 
             <div class="social">
                 <h1>Social</h1>
@@ -174,9 +138,5 @@
             Copyright © 2020 - Rotaract Brasil. Todos os direitos reservados.
           </div>
     </footer>
-
-
-    
-
 </body>
 </html>

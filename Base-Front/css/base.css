@@ -25,10 +25,8 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    background-color: transparent;
-   /* background: #1b1b1b; */
+    background: #1b1b1b; 
 }
-
 
 nav.solid {
     background-color: var(--secundy-color);
@@ -39,6 +37,8 @@ nav.solid {
     transition: background-color 0.5s ease 0.1s;
   }
 
+
+
 nav:after {
     content: '';
     clear: both;
@@ -48,9 +48,9 @@ nav:after {
 nav .logo {
     float: left;
     height: 70px;
-    width: 180px;
-    display: block;
-    background-size: contain;
+	width: 180px;
+	display: block;
+	background-size: contain;
     color: transparent;
     padding-left: 40px;
 }
@@ -66,8 +66,7 @@ nav ul {
 nav ul li {
     float: left;
     display: inline-block;
-    background-color: transparent;
-    /*background: #1b1b1b;*/
+    background: #1b1b1b;
     margin: 0 5px;
 }
 
@@ -129,7 +128,7 @@ nav ul ul li a {
 }
 
 
-img#fundo {
+img {
     width: 100%;
 }
 
@@ -244,62 +243,6 @@ footer {
     margin-bottom: 15px;
 }
 
-html,body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-  body {
-    background: #ddd;
-  }
-  .wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .slider {
-    width: 100%;
-    height: 100px;
-    position: relative;
-    background: white;
-    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
-    display: flex;
-    overflow: hidden;
-  }
-  .slide {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    animation: slideshow 8s linear infinite;
-  }
-  .slide img#partners {
-    height: 90px;
-    padding: 0 30px 0 30px;
-  }
-  @keyframes slideshow {
-    0% {transform: translateX(0);}
-    100% {transform: translateX(-100%);}
-  }
-  .slider::before, .slider::after {
-    height: 100px;
-    width: 200px;
-    position: absolute;
-    content: "";
-    background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
-    z-index: 2;
-  }
-  .slider::before {
-    left: 0;
-    top: 0;
-  }
-  .slider::after {
-    right:0;
-    top:0;
-    transform: rotateZ(180deg);
-  }
-
 @media(max-width: 768px) {
     .up-section,.dwn-section {
         flex-direction: column;
@@ -391,3 +334,4 @@ html,body {
         display: block;
     }
 }
+
