@@ -1,6 +1,8 @@
 language: node_js
 node_js:
-  - 13
+- 13
+script:
+- echo "skipping tests"
 deploy:
   provider: heroku
   app: siterotaract2020
