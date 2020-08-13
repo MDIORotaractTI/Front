@@ -1,178 +1,953 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
-    <title>MDIO</title>
-</head>
-<body>
-    <nav>
-        <a href="../index.html" class="navbar-brand">
-            <img class="logo" src="images/mdio-logo.svg" alt="">
-          </a>
-        <label for="btn" class="icon">
-            <span class="fa fa-bars"></span>
-        </label>
-        <input type="checkbox" id="btn">
-        <ul>
-            <li><a href="#">INICIO</a></li>
-            <li>
-                <label for="btn-1" class="show">QUEM SOMOS +</label>
-                <a href="#">QUEM SOMOS</a>
-                <input type="checkbox" id="btn-1">
-                <ul>
-                    <li><a href="#">Rotaract Brasil</a></li>
-                    <li><a href="#">Estrutura</a></li>
-                    <li><a href="#">Galeria de Presidentes</a></li>
-                    <li><a href="#">Reconhecimento</a></li>
-                </ul>
-            </li>
-            <li>
-                <label for="btn-2" class="show">COMUNICADOS +</label>
-                <a href="#">COMUNICADOS</a>
-                <input type="checkbox" id="btn-2">
-                <ul>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Eventos</a></li>
-                </ul>
-            </li>
-            <li><a href="#">ENCONTRE UM CLUBE</a></li>
-            <li><a href="#">ASSOCIADOS</a></li>
-        </ul>
-    </nav>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            // Transition effect for navbar 
-            $(window).scroll(function() {
-            // checks if window is scrolled more than 500px, adds/removes solid class
-            if($(this).scrollTop() > 100) { 
-                $('nav,ul li').addClass('solid');
-            } else {
-                $('nav,ul li').removeClass('solid');
-            }
-            });
-        });
-    </script>
-
-
-    <img src="thumb-1920-1033762.jpg" id="fundo" alt="jojo">
-
-    <div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga vero nulla. Quidem ab officiis neque aliquam natus magni cum, dicta asperiores quam, voluptatem unde! Quia eius porro culpa atque!</p>
-        
-    </div>
-
-    <div class="wrapper">
-        <div class="slider">
-          <div class="slide">
-            <img src="images/Partners/bj-logo.png" id="partners"/>
-            <img src="images/Partners/fe-logo.png" id="partners"/>
-            <img src="images/Partners/ic-logo.png" id="partners"/>
-            <img src="images/Partners/rb-logo.png" id="partners"/>
-            <img src="images/Partners/ribo-logo.png" id="partners"/>
-          </div>
-          <div class="slide">
-            <img src="images/Partners/bj-logo.png" id="partners"/>
-            <img src="images/Partners/fe-logo.png" id="partners"/>
-            <img src="images/Partners/ic-logo.png" id="partners"/>
-            <img src="images/Partners/rb-logo.png" id="partners"/>
-            <img src="images/Partners/ribo-logo.png" id="partners"/>
-          </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../assets/css/theme.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <link href="../assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <title>MDIO</title>
+    </head>
+    <body>
+        <div class="header fixed-top">
+            <!-- navigation start -->
+            <div class="container-lg">
+                <nav class="navbar navbar-expand-lg navbar-default">
+                    <a class="navbar-brand" href="./index.html">
+                    <img src="../assets/img/rotaract-logo.jpg" style="width: 80px; height: 80px;" alt="" />
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar mt-0"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-default">
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="navbar-nav ml-auto mr-lg-3">
+                            <li class="nav-item dropdown disabled">
+                                <a class="nav-link d-lg-none" href="#!">
+                                Menu
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://www.omirbrasil.org.br/"> Portal</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="menu-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                                Sobre
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right dropdown-menu-xl-left dropdown-menu-arrow" aria-labelledby="menu-2">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="mr-3 icon-shape icon-lg rounded-circle bg-light">
+                                                    <i class="fas fa-check-circle"></i>                                                </div>
+                                                <div class="">
+                                                    <h4 class="mb-0 h5">Quem somos</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-lg-right">
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/program-grid.html"> Nossa Historia</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/program-list.html"> Estrutura </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/program-single.html"> Equipe</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/program-single.html"> Galeria de Presidentes</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/program-single.html"> Reconhecimentos</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="mr-3 icon-shape icon-lg rounded-circle bg-light">
+                                                    <i class="fas fa-check-circle"></i>                                                </div>
+                                                <div class="">
+                                                    <h4 class="mb-0 h5">Eventos</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-lg-right">
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/events.html"> Ultimos Eventos</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/event-single.html">Eventos Regionais</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="mr-3 icon-shape icon-lg rounded-circle bg-light">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                                <div class="">
+                                                    <h4 class="mb-0 h5">Podcast</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-lg-right">
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/podcast.html"> List</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/podcast-thumbnail.html"> Thumbnail</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/podcast-single.html"> Single</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="mr-3 icon-shape icon-lg rounded-circle bg-light">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                                <div class="">
+                                                    <h4 class="mb-0 h5">Cursos</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-lg-right">
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/course-thumbnail.html"> Grid</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="./pages/course-single.html"> Single</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="mr-3 icon-shape icon-lg rounded-circle bg-light">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                                <div class="">
+                                                    <h4 class="mb-0 h5">Account</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-lg-right">
+                                            <li>
+                                                <a class="dropdown-item" href="../pages/signin.html"> Signin</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="../pages/signup.html"> Cadastrar</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="../pages/password-reset.html"> Password Reset</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">
+                                            <div class="d-flex align-items-center">
+                                                <div class="mr-3 icon-shape icon-lg rounded-circle bg-light">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                                <div class="">
+                                                    <h4 class="mb-0 h5">Utilities</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-lg-right">
+                                            <li>
+                                                <a class="dropdown-item" href="../views/pages/blog.html"> About me</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="../pages/team-page.html"> Team</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="../pages/contact.html"> Contact</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="../pages/error-page.html"> Error</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="menu-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Loja
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-arrow dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="menu-3">
+                                    <li>
+                                        <a class="dropdown-item" href="../pages/blog.html">
+                                        Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/pages/blog-author.html">
+                                        Blog Author
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/pages/blog-category.html">
+                                        Blog Category
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/pages/blog-classic.html">
+                                        Blog Classic
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="/pages/blog-single.html">
+                                        Blog Single
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="menu-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Clubes
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-arrow dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="menu-4">
+                                    <li class="">
+                                        <a class="dropdown-item" href="/pages/book-download-page.html">
+                                            <h4 class="mb-0 h5">Download Book</h4>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a class="dropdown-item" href="/pages/stories.html">
+                                            <div class="">
+                                                <h4 class="mb-0 h5">Success Stories</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a class="dropdown-item" href="/pages/booking-page.html">
+                                            <div class="">
+                                                <h4 class="mb-0 h5">Free Session Booking</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/docs/index.html"> Noticias</a>
+                            </li>
+                        </ul>
+                        <div class="header-btn">
+                            <a href="/pages/signup.html" class="btn btn-primary btn-sm">Registre-se</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- navigation close -->
         </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="up-section">
-            <a href="#" class="f-logo">MDIO</a>
-            <ol>
-                <!--heading-->
-                <h1>Quem Somos</h1>
-                <li><a href="#">Rotaract Brasil</a></li>
-                <li><a href="#">Estruturaa</a></li>
-                <li><a href="#">Galeria de Presidentes</a></li>
-                <li><a href="#">Reconhecimento</a></li>
-            </ol>
-
-            <ol>
-                <h1>Comunicados</h1>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Eventos</a></li>
-            </ol>
-
-            <!-- social -->
-            <div class="social">
-                <h1>Social</h1>
-                <div class="social-icons">
-                    <div class="transp">
-                        <img src="images/Footer/fb-icon.svg" alt="facebook" class="image">
-                      </div>
-                    <span class="transp">
-                        <img src="images/Footer/ig-icon.svg" alt="" class="image">
-                    </span>
-                    <span class="transp">
-                        <img src="images/Footer/in-icon.svg" alt="" class="image">
-                    </span>
-                    <span class="transp">
-                        <img src="images/Footer/tt-icon.svg" alt="" class="image">
-                    </span>
-                    <span class="transp">
-                        <img src="images/Footer/yt-icon.svg" alt="" class="image">
-                    </span>   
-                   
+        <div>
+            <!-- hero section -->
+            <div style="background: url(../assets/img/background.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-xl-1 col-xl-10 col-md-12 col-12">
+                            <div class="py-13 pt-lg-16 pb-lg-14 text-center text-light">
+                                <h1 class="display-3 font-weight-bold text-white mb-2">
+                                    Be your own hero
+                                </h1>
+                                <p class="px-lg-14 mb-4 lead">
+                                    Join our Rotaract community.
+                                    <br />
+                                </p>
+                                <a href="../pages/signin.html" class="btn btn-primary btn-lg">Cadastro</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="dwn-section">
-            <a href="#" class="f-logo">MDIO</a>
-            <ol>
-                <h1>Quem Somos</h1>
-                <li><a href="#">Rotaract Brasil</a></li>
-                <li><a href="#">Estruturaa</a></li>
-                <li><a href="#">Galeria de Presidentes</a></li>
-                <li><a href="#">Reconhecimento</a></li>
-            </ol>
-
-            <ol>
-                <h1>Comunicados</h1>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Eventos</a></li>
-            </ol>
-
-            <div class="social">
-                <h1>Social</h1>
-                <div class="social-icons">
-                    <a class="fb" href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-                    <a class="instagram" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-                    <a class="linkdin"  href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                    <a class="twt" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                    <a class="youtube" href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+            <!-- about section -->
+            <div class="py-lg-12 py-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-xl-3 col-xl-6 col-md-12 col-12">
+                            <div class="mb-8 text-center">
+                                <h2 class="mb-3 h1">A Boy Before Coach</h2>
+                                <p class="lead">
+                                    Before Coach became a media sensation for empowering people and sharing 'Inspiration' across the globe, he had his share of obstacles to overcome.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-end">
+                        <div class="col-xl-7 col-lg-12 col-md-12 col-12">
+                            <div class="row">
+                                <div class="col-md-4 mb-2 mb-lg-2">
+                                    <img src="../assets/images/profile-img-1.png" alt="" class="img-fluid rounded h-100 w-100 img-hover-zoom--basic" />
+                                </div>
+                                <div class="col-md-8 mb-2 mb-lg-2">
+                                    <img src="../assets/images/profile-img-2.png" alt="" class="img-fluid rounded h-100 w-100" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-12 col-md-12 col-12 mt-3 mt-xl-0">
+                            <p class="mb-6">
+                                From having a learning disability, which led to being alone and bullied in school, to being sexually abused as a child, to being injured and broke on his sister’s couch, The Coach story is the perfect example of
+                                how anybody can overcome the obstacles in their life and achieve greatness.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 mb-2 mb-lg-2">
+                                    <img src="../assets/images/profile-img-3.png" alt="" class="img-fluid h-100 rounded w-100" />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12 mb-2 mb-lg-2">
+                                    <img src="../assets/images/profile-img-4.png" alt="" class="img-fluid h-100 rounded w-100" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        
+            <!-- form section -->
+            <div class="pb-12 pt-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-lg-3 col-lg-6 col-md-12 col-12">
+                            <div class="mb-5 text-center">
+                                <h2 class="h1 mb-3">
+                                    Make following your passion your full time job
+                                </h2>
+                                <p>
+                                    Learn How To Play A Different Game In Business With Your Own Rules
+                                </p>
+                            </div>
+                        </div>
+                        <div class="offset-lg-2 col-lg-8 col-md-12 col-12">
+                            <form class="form-row">
+                                <div class="form-group mb-2 mb-lg-0 col-lg-5 col-md-5 col-12">
+                                    <label for="name" class="sr-only">name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
+                                </div>
+                                <div class="form-group mb-2 mb-lg-0 col-lg-5 col-md-5 col-12">
+                                    <label for="email" class="sr-only"></label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-12">
+                                    <button class="btn btn-warning" type="submit">Submit</button>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <small class="text-muted">We will never send you spam.</small>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ultimas noticias -->
+            <section class="container">
+                <h1>Ultimas Noticias</h1>
+                <div class="row">
 
-          <div class="copyright">
-            Copyright © 2020 - Rotaract Brasil. Todos os direitos reservados.
-          </div>
-    </footer>
-</body>
+                <div class="col-md-4 bio-card">
+                  <img src="http://source.unsplash.com/B1amIgaNkwA/400x300/">
+                  <div>
+                    <h2>Item 1</h2>
+                    <h4>Assistant Provost and Director</h4>
+                    <h4>Distance &amp; Continuing Education</h4>
+                    <!-- <h5><a href="mailto:email@dce.ufl.edu">email@dce.ufl.edu</a></h5>
+                    <h5><a href="tel:9999999999">999-999-9999</a></h5> -->
+                    <div class="tab">
+                      <input id="tab-one" type="checkbox" name="tabs">
+                      <label for="tab-one">View Bio</label>
+                      <!-- <div class="tab-content">
+                        <p>Brian K. Marchman, Ph.D. serves as Assistant Provost and the Director of Distance & Continuing Education (DCE) at the University of Florida. As the Director of DCE, a unit in the Associate Provost’s Office for Teaching & Technology, Dr. Marchman is responsible for online course production, Distance Learning program and student support, UF Flexible Learning, UF online Dual Enrollment, the TREEO Center, as well as non-credit Professional Development, Executive Education, and Conferences. </p>
+                        <p>Dr. Marchman is a proud four-time graduate of the University of Florida.  He earned his undergraduate degree in Political Science, M.Ed. in Social Science Education, Ed.S. and Ph.D. in Educational Leadership, each from UF. He also holds a UF graduate certificate in Managing Distance Education Environments.  In addition, Dr. Marchman completed post-doctoral work in a certificate program at Harvard University’s Graduate School.</p>
+                        <a href="#" class="btn">Read More</a>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 bio-card">
+                  <img src="http://source.unsplash.com/B1amIgaNkwA/400x300/">
+                  <div>
+                    <h2>Item 1</h2>
+                    <h4>Assistant Provost and Director</h4>
+                    <h4>Distance &amp; Continuing Education</h4>
+                    <!-- <h5><a href="mailto:email@dce.ufl.edu">email@dce.ufl.edu</a></h5>
+                    <h5><a href="tel:9999999999">999-999-9999</a></h5> -->
+                    <div class="tab">
+                      <input id="tab-one" type="checkbox" name="tabs">
+                      <label for="tab-one">View Bio</label>
+                      <!-- <div class="tab-content">
+                        <p>Brian K. Marchman, Ph.D. serves as Assistant Provost and the Director of Distance & Continuing Education (DCE) at the University of Florida. As the Director of DCE, a unit in the Associate Provost’s Office for Teaching & Technology, Dr. Marchman is responsible for online course production, Distance Learning program and student support, UF Flexible Learning, UF online Dual Enrollment, the TREEO Center, as well as non-credit Professional Development, Executive Education, and Conferences. </p>
+                        <p>Dr. Marchman is a proud four-time graduate of the University of Florida.  He earned his undergraduate degree in Political Science, M.Ed. in Social Science Education, Ed.S. and Ph.D. in Educational Leadership, each from UF. He also holds a UF graduate certificate in Managing Distance Education Environments.  In addition, Dr. Marchman completed post-doctoral work in a certificate program at Harvard University’s Graduate School.</p>
+                        <a href="#" class="btn">Read More</a>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 bio-card">
+                  <img src="http://source.unsplash.com/B1amIgaNkwA/400x300/">
+                  <div>
+                    <h2>Item 1</h2>
+                    <h4>Assistant Provost and Director</h4>
+                    <h4>Distance &amp; Continuing Education</h4>
+                    <!-- <h5><a href="mailto:email@dce.ufl.edu">email@dce.ufl.edu</a></h5>
+                    <h5><a href="tel:9999999999">999-999-9999</a></h5> -->
+                    <div class="tab">
+                      <input id="tab-one" type="checkbox" name="tabs">
+                      <label for="tab-one">View Bio</label>
+                      <!-- <div class="tab-content">
+                        <p>Brian K. Marchman, Ph.D. serves as Assistant Provost and the Director of Distance & Continuing Education (DCE) at the University of Florida. As the Director of DCE, a unit in the Associate Provost’s Office for Teaching & Technology, Dr. Marchman is responsible for online course production, Distance Learning program and student support, UF Flexible Learning, UF online Dual Enrollment, the TREEO Center, as well as non-credit Professional Development, Executive Education, and Conferences. </p>
+                        <p>Dr. Marchman is a proud four-time graduate of the University of Florida.  He earned his undergraduate degree in Political Science, M.Ed. in Social Science Education, Ed.S. and Ph.D. in Educational Leadership, each from UF. He also holds a UF graduate certificate in Managing Distance Education Environments.  In addition, Dr. Marchman completed post-doctoral work in a certificate program at Harvard University’s Graduate School.</p>
+                        <a href="#" class="btn">Read More</a>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+              </section>
+
+<!--- ultimos eventos-->
+
+<section class="container">
+    <h1>Ultimos Eventos</h1>
+    <div class="row">
+
+    <div class="col-md-4 bio-card">
+      <img src="http://source.unsplash.com/B1amIgaNkwA/400x300/">
+      <div>
+        <h2>Item 1</h2>
+        <h4>Assistant Provost and Director</h4>
+        <h4>Distance &amp; Continuing Education</h4>
+        <!-- <h5><a href="mailto:email@dce.ufl.edu">email@dce.ufl.edu</a></h5>
+        <h5><a href="tel:9999999999">999-999-9999</a></h5> -->
+        <div class="tab">
+          <input id="tab-one" type="checkbox" name="tabs">
+          <label for="tab-one">View Bio</label>
+          <!-- <div class="tab-content">
+            <p>Brian K. Marchman, Ph.D. serves as Assistant Provost and the Director of Distance & Continuing Education (DCE) at the University of Florida. As the Director of DCE, a unit in the Associate Provost’s Office for Teaching & Technology, Dr. Marchman is responsible for online course production, Distance Learning program and student support, UF Flexible Learning, UF online Dual Enrollment, the TREEO Center, as well as non-credit Professional Development, Executive Education, and Conferences. </p>
+            <p>Dr. Marchman is a proud four-time graduate of the University of Florida.  He earned his undergraduate degree in Political Science, M.Ed. in Social Science Education, Ed.S. and Ph.D. in Educational Leadership, each from UF. He also holds a UF graduate certificate in Managing Distance Education Environments.  In addition, Dr. Marchman completed post-doctoral work in a certificate program at Harvard University’s Graduate School.</p>
+            <a href="#" class="btn">Read More</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 bio-card">
+      <img src="http://source.unsplash.com/B1amIgaNkwA/400x300/">
+      <div>
+        <h2>Item 1</h2>
+        <h4>Assistant Provost and Director</h4>
+        <h4>Distance &amp; Continuing Education</h4>
+        <!-- <h5><a href="mailto:email@dce.ufl.edu">email@dce.ufl.edu</a></h5>
+        <h5><a href="tel:9999999999">999-999-9999</a></h5> -->
+        <div class="tab">
+          <input id="tab-one" type="checkbox" name="tabs">
+          <label for="tab-one">View Bio</label>
+          <!-- <div class="tab-content">
+            <p>Brian K. Marchman, Ph.D. serves as Assistant Provost and the Director of Distance & Continuing Education (DCE) at the University of Florida. As the Director of DCE, a unit in the Associate Provost’s Office for Teaching & Technology, Dr. Marchman is responsible for online course production, Distance Learning program and student support, UF Flexible Learning, UF online Dual Enrollment, the TREEO Center, as well as non-credit Professional Development, Executive Education, and Conferences. </p>
+            <p>Dr. Marchman is a proud four-time graduate of the University of Florida.  He earned his undergraduate degree in Political Science, M.Ed. in Social Science Education, Ed.S. and Ph.D. in Educational Leadership, each from UF. He also holds a UF graduate certificate in Managing Distance Education Environments.  In addition, Dr. Marchman completed post-doctoral work in a certificate program at Harvard University’s Graduate School.</p>
+            <a href="#" class="btn">Read More</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 bio-card">
+      <img src="http://source.unsplash.com/B1amIgaNkwA/400x300/">
+      <div>
+        <h2>Item 1</h2>
+        <h4>Assistant Provost and Director</h4>
+        <h4>Distance &amp; Continuing Education</h4>
+        <!-- <h5><a href="mailto:email@dce.ufl.edu">email@dce.ufl.edu</a></h5>
+        <h5><a href="tel:9999999999">999-999-9999</a></h5> -->
+        <div class="tab">
+          <input id="tab-one" type="checkbox" name="tabs">
+          <label for="tab-one">View Bio</label>
+          <!-- <div class="tab-content">
+            <p>Brian K. Marchman, Ph.D. serves as Assistant Provost and the Director of Distance & Continuing Education (DCE) at the University of Florida. As the Director of DCE, a unit in the Associate Provost’s Office for Teaching & Technology, Dr. Marchman is responsible for online course production, Distance Learning program and student support, UF Flexible Learning, UF online Dual Enrollment, the TREEO Center, as well as non-credit Professional Development, Executive Education, and Conferences. </p>
+            <p>Dr. Marchman is a proud four-time graduate of the University of Florida.  He earned his undergraduate degree in Political Science, M.Ed. in Social Science Education, Ed.S. and Ph.D. in Educational Leadership, each from UF. He also holds a UF graduate certificate in Managing Distance Education Environments.  In addition, Dr. Marchman completed post-doctoral work in a certificate program at Harvard University’s Graduate School.</p>
+            <a href="#" class="btn">Read More</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+</div>
+  </section>
+
+
+              <style>
+/* BIO CARDS */
+.bio-cont {
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.bio-card img {
+	max-width: 100%;
+}
+.bio-card {
+	flex: 1;
+	margin: 40px auto;
+	max-width: 400px;
+}
+.bio-card h4,
+.bio-card h5 {
+	margin-bottom: 0;
+	line-height: 30px;
+}
+.bio-card h4 {
+	font-size: 21px;
+}
+.bio-card h5 {
+	font-size: 18px;
+}
+
+
+
+
+
+/*ACCORDION STYLING*/
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: var(--uf-web-blue);
+  overflow: hidden;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: rgba(255, 255, 255, 0.5);
+  line-height: 3;
+	font-family: gentona;
+	font-weight: 400;
+  cursor: pointer;
+	border-top: .5px solid rgba(0, 0, 0, 0.2);
+	border-bottom: .5px solid rgba(0, 0, 0, 0.2);
+	border-left: none;
+	border-right: none;
+}
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: var(--uf-cream);
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+.tab-content p {
+  margin: 1em;
+	color: black;
+	font-size: 16px;
+}
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+/* Icon */
+.tab label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+.tab input[type=checkbox] + label::after {
+  content: "+";
+}
+.tab input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+
+
+              </style>
+  
+
+   
+     
+            
+            <!-- program section -->
+            <div class="pt-14 pb-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-xl-3 col-xl-6 col-md-12">
+                            <div class="text-center mb-8 pr-5">
+                                <h2 class="mb-3 h1">Master Every Area of Your Life</h2>
+                                <p class="lead">
+                                    Extreme Execution will help you leverage who you are in your life and career.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card border-0">
+                                <a href="pages/program-single.html" class="img-zoom">
+                                <img class="rounded img-fluid" src="assets/images/thumb-img-1.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="card border-0">
+                                <div class="card-body mt-n13 bg-white mr-6 rounded-right p-4">
+                                    <a href="pages/program-single.html">
+                                        <h4 class="mb-3">Life Coaching</h4>
+                                    </a>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, conse cte turdisse in ornare lectussit amet lacinia nisi.
+                                    </p>
+                                    <a href="pages/program-single.html" class="btn-primary-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card border-0">
+                                <a href="pages/program-single.html" class="img-zoom">
+                                <img class="rounded img-fluid" src="assets/images/thumb-img-2.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="card border-0">
+                                <div class="card-body mt-n13 bg-white mr-6 rounded-right p-4">
+                                    <a href="pages/program-single.html">
+                                        <h4 class="mb-3">Relationship</h4>
+                                    </a>
+                                    <p>
+                                        Maecenas eu est purus. Morbi luctus turpis justo, sit amet mollis arcu ultricies et.
+                                    </p>
+                                    <a href="pages/program-single.html" class="btn-primary-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-lg-block d-md-none col-12">
+                            <div class="card border-0">
+                                <a href="pages/program-single.html" class="img-zoom">
+                                <img class="rounded img-fluid" src="assets/images/thumb-img-3.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="card border-0">
+                                <div class="card-body mt-n13 bg-white mr-6 rounded-right p-4">
+                                    <a href="pages/program-single.html">
+                                        <h4 class="mb-3">Leadership</h4>
+                                    </a>
+                                    <p>
+                                        Pellentesque at rhoncus metus, in condimentum felis. Donec congue augue placera.
+                                    </p>
+                                    <a href="pages/program-single.html" class="btn-primary-link">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- gallery section -->
+            <div class="pt-10 pb-0">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-md-3 col-12">
+                            <img src="assets/images/gallery-img-1.jpg" alt="" class="img-fluid border-right border-white h-lg-100" />
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <img src="assets/images/gallery-img-2.jpg" alt="" class="img-fluid border-bottom border-white h-lg-100" />
+                            <img src="assets/images/gallery-img-3.jpg" alt="" class="img-fluid border-bottom border-white h-lg-100" />
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <img src="assets/images/gallery-img-4.jpg" alt="" class="img-fluid border-bottom border-white h-lg-100 border-left" />
+                            <img src="assets/images/gallery-img-5.jpg" alt="" class="img-fluid border-bottom border-white h-lg-100 border-left" />
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <img src="assets/images/gallery-img-6.jpg" alt="" class="img-fluid border-left border-white h-lg-100" />
+                        </div>
+                    </div>
+                </div>
+                <!-- workshop form -->
+                <!-- <div class="container">
+                    <div class="row">
+                        <div class="offset-lg-3 col-lg-6 offset-md-1 col-md-10 col-12">
+                            <div class="card mt-lg-n18 mt-n12 text-center">
+                                <div class="card-body p-5">
+                                    <div class="mb-4">
+                                        <h2 class="mb-3">Book for Speaking or Workshops</h2>
+                                        <p class="mb-0 font-14">
+                                            Call me at:
+                                            <span class="text-dark"> 123-567-7890 </span>or Book online by fill below form.
+                                        </p>
+                                    </div>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="custom-select">
+                                                <option selected="">Select Workshops</option>
+                                                <option value="1">Business Coaching</option>
+                                                <option value="2">Relationship</option>
+                                                <option value="3">Lifecoaching</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-block">
+                                            Book Now
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div> -->
+            </div>
+            <!-- client logo -->
+            <!-- <div class="pt-0 pt-lg-5 pb-5 pb-lg-14 bg-light mt-n15">
+                <div class="pt-18">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="text-center mb-10">
+                                    <h3 class="h4">
+                                        The best companies know when they're in good company.
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-airbnb.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-digitalocean.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-facebook.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-discord.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-intercom.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-twitch.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-paypal.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-netflix.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-xboxone.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-instagram.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-pinterest.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <div class="mb-4 text-center">
+                                    <img src="assets/images/logo-stripe.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div> -->
+            <div class="wrapper">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="images/Partners/bj-logo.png" id="partners"/>
+                        <img src="images/Partners/fe-logo.png" id="partners"/>
+                        <img src="images/Partners/ic-logo.png" id="partners"/>
+                        <img src="images/Partners/rb-logo.png" id="partners"/>
+                        <img src="images/Partners/ribo-logo.png" id="partners"/>
+                    </div>
+                    <div class="slide">
+                        <img src="images/Partners/bj-logo.png" id="partners"/>
+                        <img src="images/Partners/fe-logo.png" id="partners"/>
+                        <img src="images/Partners/ic-logo.png" id="partners"/>
+                        <img src="images/Partners/rb-logo.png" id="partners"/>
+                        <img src="images/Partners/ribo-logo.png" id="partners"/>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <div class="footer pt-11 pb-3 bg-dark text-base">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="mb-4">
+                                <h4 class="mb-4 text-white">Sobre</h4>
+                                <ul class="list-unstyled list-group">
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Meet Coach</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Press</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Social Feed</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link"> Help</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="mb-4">
+                                <h4 class="mb-4 text-white">Noticias</h4>
+                                <ul class="list-unstyled list-group">
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Business Coaching</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Relationship</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Leadership</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Life Coaching</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Time Management</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="mb-4">
+                                <h4 class="mb-4 text-white">Projetos</h4>
+                                <ul class="list-unstyled list-group">
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Online Courses</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link"> Books Meditation</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link"> Podcast</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Albums</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Download App</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="mb-4">
+                                <h4 class="mb-4 text-white">Follow Me</h4>
+                                <ul class="list-unstyled list-group">
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Instagram</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link"> Facebook</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link"> LinkedIn</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">YouTube</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="list-group-item-link">Twitter</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-8 col-12">
+                            <div class="mb-4">
+                                <h4 class="mb-4 text-white">Subscribe to our newsletter</h4>
+                                <div class="">
+                                    <p>Subscribe to get notified daily new motivational & inspiration tips.</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control border-white" placeholder="Email Address" required />
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mt-8">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">© 2020 Coach, Inc.</li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="text-reset"> Privacy Policy </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="text-reset"> Terms</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <!-- Libs JS -->
+            <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+            <script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/bootstrap.bundle.min.js"></script>
+            <script src="../assets/js/jquery.slimscroll.min.js"></script>
+            <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+            <script src="../assets/js/prism.js"></script>
+            <script src="../assets/js/leaflet.js"></script>
+            <script src="../assets/js/moment.min.js"></script>
+            <script src="..assets/js/lightpick.js"></script>
+            <!-- clipboard -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+            <!-- Theme JS -->
+            <script src="../assets/js/theme.min.js"></script>
+        </div>
+        <!-- FOOTER -->
+    </body>
 </html>
