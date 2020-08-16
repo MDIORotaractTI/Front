@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+				
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <title>MDIO</title>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="navbar-brand">
+            <img class="logo" src="images/mdio-logo.svg" alt="">
+          </a>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li>
+                <label for="btn-1" class="show">QUEM SOMOS +</label>
+                <a href="#">QUEM SOMOS</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="#">Rotaract Brasil</a></li>
+                    <li><a href="#">Estrutura</a></li>
+                    <li><a href="#">Galeria de Presidentes</a></li>
+                    <li><a href="#">Reconhecimento</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">COMUNICADOS +</label>
+                <a href="#">COMUNICADOS</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="news.html">Noticias</a></li>
+                    <li><a href="events.html">Eventos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">ENCONTRE UM CLUBE</a></li>
+            <li><a href="#">ASSOCIADOS</a></li>
+        </ul>
+    </nav>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Transition effect for navbar 
+            $(window).scroll(function() {
+            // checks if window is scrolled more than 500px, adds/removes solid class
+            if($(this).scrollTop() > 100) { 
+                $('nav,ul li').addClass('solid');
+            } else {
+                $('nav,ul li').removeClass('solid');
+            }
+            });
+        });
+    </script>
+
+
+
+<script type="text/javascript" src="https://codepen.io/stabla/pen/PGVvJB.js"></script>
+
+    <script type="text/javascript" src="https://use.fontawesome.com/a0735bfa73.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwIMGpCqD2PmWykQvNMrenPPif7hi1tiI&amp;libraries=geometry"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/nmccready/google-maps-utility-library-v3-infobox/master/dist/infobox.min.js"></script>
+    <script type="text/javascript" src="https://raw.githubusercontent.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
+   
+
+
+<div class="container">
+
+    <div class="container">
+        <div id="map"></div>
+        <div class="pointer"> << Click search button</div>
+    </div>
+
+    <style>
+        body,
+html {
+  height: 100%;
+  font-family:Arial;
+}
+  
+#map {
+  width: 100%;
+  height: 100%;
+  z-index:100;
+}
+#mapSearchContainer{
+  position:fixed;
+  top:20px;
+  right: 40px;
+  height:30px;
+  width:180px;
+  z-index:110;
+  font-size:10pt;
+  color:#5d5d5d;
+  border:solid 1px #bbb;
+  background-color:#f8f8f8;
+}
+.pointer{
+  position:absolute;
+  top:86px;
+  left:60px;
+  z-index:99999;
+}
+    </style>
+
+    <script>
+// Initialize the map and assign it to a variable for later use
+var map = L.map('map', {
+    // Set latitude and longitude of the map center (required)
+    center: [37.7833, -122.4167],
+    // Set the initial zoom level, values 0-18, where 0 is most zoomed-out (required)
+    zoom: 10
+});
+
+L.control.scale().addTo(map);
+
+// Create a Tile Layer and add it to the map
+//var tiles = new L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png').addTo(map);
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  var searchControl = new L.esri.Controls.Geosearch().addTo(map);
+
+  var results = new L.LayerGroup().addTo(map);
+
+  searchControl.on('results', function(data){
+    results.clearLayers();
+    for (var i = data.results.length - 1; i >= 0; i--) {
+      results.addLayer(L.marker(data.results[i].latlng));
+    }
+  });
+
+setTimeout(function(){$('.pointer').fadeOut('slow');},3400);
+
+    </script>
+  
+
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+  <script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+  <script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css">
+  
+
+
+
+    </div>
+
+    <div class="wrapper">
+        <div class="slider">
+          <div class="slide">
+            <img src="images/Partners/bj-logo.png" id="partners"/>
+            <img src="images/Partners/fe-logo.png" id="partners"/>
+            <img src="images/Partners/ic-logo.png" id="partners"/>
+            <img src="images/Partners/rb-logo.png" id="partners"/>
+            <img src="images/Partners/ribo-logo.png" id="partners"/>
+          </div>
+          <div class="slide">
+            <img src="images/Partners/bj-logo.png" id="partners"/>
+            <img src="images/Partners/fe-logo.png" id="partners"/>
+            <img src="images/Partners/ic-logo.png" id="partners"/>
+            <img src="images/Partners/rb-logo.png" id="partners"/>
+            <img src="images/Partners/ribo-logo.png" id="partners"/>
+          </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+    
+
+        <div class="dwn-section">
+            <a href="#" class="f-logo">MDIO</a>
+            <ol>
+                <h1>Quem Somos</h1>
+                <li><a href="#">Rotaract Brasil</a></li>
+                <li><a href="#">Estruturaa</a></li>
+                <li><a href="#">Galeria de Presidentes</a></li>
+                <li><a href="#">Reconhecimento</a></li>
+            </ol>
+
+            <ol>
+                <h1>Comunicados</h1>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Eventos</a></li>
+            </ol>
+
+            <div class="social">
+                <h1>Social</h1>
+                <div class="social-icons">
+                    <a class="fb" href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    <a class="instagram" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a class="linkdin"  href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                    <a class="twt" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a class="youtube" href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        
+
+          <div class="copyright">
+            Copyright © 2020 - Rotaract Brasil. Todos os direitos reservados.
+          </div>
+    </footer>
+
+<!-- 
+    <script type="text/javascript">
+        $('.carousel').slick({
+       dots: true,
+       infinite: true,
+       slidesToShow: 4,
+       slidesToScroll: 4
+     });
+         </script>
+      -->
+
+</body>
+</html>
