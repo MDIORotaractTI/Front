@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+				
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <title>MDIO</title>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="navbar-brand">
+            <img class="logo" src="images/mdio-logo.svg" alt="">
+          </a>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li>
+                <label for="btn-1" class="show">QUEM SOMOS +</label>
+                <a href="#">QUEM SOMOS</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="#">Rotaract Brasil</a></li>
+                    <li><a href="#">Estrutura</a></li>
+                    <li><a href="#">Galeria de Presidentes</a></li>
+                    <li><a href="#">Reconhecimento</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">COMUNICADOS +</label>
+                <a href="#">COMUNICADOS</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="news.html">Noticias</a></li>
+                    <li><a href="events.html">Eventos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">ENCONTRE UM CLUBE</a></li>
+            <li><a href="#">ASSOCIADOS</a></li>
+        </ul>
+    </nav>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Transition effect for navbar 
+            $(window).scroll(function() {
+            // checks if window is scrolled more than 500px, adds/removes solid class
+            if($(this).scrollTop() > 100) { 
+                $('nav,ul li').addClass('solid');
+            } else {
+                $('nav,ul li').removeClass('solid');
+            }
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+   $('.carousel').slick({
+  dots: true,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4
+});
+</script>
+
+
+
+
+<div class="container">
+
+    <div>
+        <div class="container-card">
+      
+            <div class="card-media">
+                <!-- media container -->
+                <div class="card-media-object-container">
+                  <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);"></div>
+                  <span class="card-media-object-tag subtle">Venda Rápida</span>
+                  <ul class="card-media-object-social-list">
+                    <li>
+                      <img src="https://s10.postimg.cc/3rjjbzcvd/profile_f.jpg" class="">
+                    </li>
+                    <li>
+                      <img src="https://s16.postimg.cc/b0j0djh79/profile_0_f.jpg" class="">
+                    </li>
+                    <li class="card-media-object-social-list-item-additional">
+                      <span>+2</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- body container -->
+                <div class="card-media-body">
+                  <div class="card-media-body-top">
+                    <span class="subtle">Sexta feira- 19 Março</span>
+                    <div class="card-media-body-top-icons u-float-right">
+                      <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                      </svg>
+                      <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="card-media-body-heading">CONARC 2021</span>
+                  <div class="card-media-body-supporting-bottom">
+                    <span class="card-media-body-supporting-bottom-text subtle">Online</span>
+                    <span class="card-media-body-supporting-bottom-text subtle u-float-right">Free &ndash;</span>
+                  </div>
+                  <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+                    <span class="card-media-body-supporting-bottom-text subtle">#Rotaract #RotaryOpensOpportunities</span>
+                    <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Ingressos</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-media">
+                <!-- media container -->
+                <div class="card-media-object-container">
+                  <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+                  <ul class="card-media-object-social-list">
+                    <li>
+                      <img src="https://s13.postimg.cc/c5aoiq1w7/stock3_f.jpg" class="">
+                    </li>
+                  </ul>
+                </div>
+                <!-- body container -->
+                <div class="card-media-body">
+                  <div class="card-media-body-top">
+                    <span class="subtle">Sexta, ABRIL 09, 7:00 PM</span>
+                    <div class="card-media-body-top-icons u-float-right">
+                      <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                      </svg>
+                      <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="card-media-body-heading">Dia // Noite - Palestra (ao Vivo) com R.I President</span>
+                  <div class="card-media-body-supporting-bottom">
+                    <span class="card-media-body-supporting-bottom-text subtle">1015 Folsom, San Francisco, CA</span>
+                    <span class="card-media-body-supporting-bottom-text subtle u-float-right">$25 &ndash; $80</span>
+                  </div>
+                  <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+                    <span class="card-media-body-supporting-bottom-text subtle">#Rotary #Rotaract</span>
+                    <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Ingressos</a>
+                  </div>
+                </div>
+              </div>
+
+            <div class="card-media">
+                <!-- media container -->
+                <div class="card-media-object-container">
+                  <div class="card-media-object" style="background-image: url(https://s9.postimg.cc/y0sfm95gv/prince_f.jpg);"></div>
+                  <span class="card-media-object-tag subtle">Venda Rápida</span>
+                  <ul class="card-media-object-social-list">
+                    <li>
+                      <img src="https://s10.postimg.cc/3rjjbzcvd/profile_f.jpg" class="">
+                    </li>
+                    <li>
+                      <img src="https://s16.postimg.cc/b0j0djh79/profile_0_f.jpg" class="">
+                    </li>
+                    <li class="card-media-object-social-list-item-additional">
+                      <span>+2</span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- body container -->
+                <div class="card-media-body">
+                  <div class="card-media-body-top">
+                    <span class="subtle">Sexta feira- 19 Março</span>
+                    <div class="card-media-body-top-icons u-float-right">
+                      <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                      </svg>
+                      <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="card-media-body-heading">CONARC 2021</span>
+                  <div class="card-media-body-supporting-bottom">
+                    <span class="card-media-body-supporting-bottom-text subtle">Online</span>
+                    <span class="card-media-body-supporting-bottom-text subtle u-float-right">Free &ndash;</span>
+                  </div>
+                  <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+                    <span class="card-media-body-supporting-bottom-text subtle">#Rotaract #RotaryOpensOpportunities</span>
+                    <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Ingressos</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-media">
+                <!-- media container -->
+                <div class="card-media-object-container">
+                  <div class="card-media-object" style="background-image: url(https://s16.postimg.cc/x8m99xtgl/tyco_f.jpg);"></div>
+                  <ul class="card-media-object-social-list">
+                    <li>
+                      <img src="https://s13.postimg.cc/c5aoiq1w7/stock3_f.jpg" class="">
+                    </li>
+                  </ul>
+                </div>
+                <!-- body container -->
+                <div class="card-media-body">
+                  <div class="card-media-body-top">
+                    <span class="subtle">Sexta, ABRIL 09, 7:00 PM</span>
+                    <div class="card-media-body-top-icons u-float-right">
+                      <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+                      </svg>
+                      <svg fill="#888888" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <span class="card-media-body-heading">Dia // Noite - Palestra (ao Vivo) com R.I President</span>
+                  <div class="card-media-body-supporting-bottom">
+                    <span class="card-media-body-supporting-bottom-text subtle">1015 Folsom, San Francisco, CA</span>
+                    <span class="card-media-body-supporting-bottom-text subtle u-float-right">$25 &ndash; $80</span>
+                  </div>
+                  <div class="card-media-body-supporting-bottom card-media-body-supporting-bottom-reveal">
+                    <span class="card-media-body-supporting-bottom-text subtle">#Rotary #Rotaract</span>
+                    <a href="#/" class="card-media-body-supporting-bottom-text card-media-link u-float-right">Ingressos</a>
+                  </div>
+                </div>
+              </div>
+          
+        </div>
+    </div>
+    
+    
+    <style>
+    html {
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    .container-card {
+      width: 700px;
+      width:100%
+    }
+    
+    .u-float-right {
+      float: right;
+    }
+    
+    .u-flex-center {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    
+    .subtle {
+      color: #888;
+      font-size: 12px;
+    }
+    
+    .card-media {
+      border-radius: 2px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
+      height: 125px;
+      margin-bottom: 25px;
+      transition: all 300ms ease-out;
+      width: 100%;
+    }
+    
+    .card-media:hover {
+      box-shadow: 0 5px 14px rgba(0, 0, 0, .2);
+    }
+    
+    .card-media-object-container {
+      background: none;
+      float: left;
+      height: 100%;
+      width: 35%;
+      position: relative;
+    }
+    
+    .card-media-object {
+      background-position: center center;
+      background-size: cover;
+      height: 100%;
+    }
+    
+    .card-media-object:after {
+      content: " ";
+      display: block;
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: all 300ms ease-out;
+      z-index: 10;
+    }
+    
+    .card-media:hover .card-media-object:after {
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 52%, rgba(0,0,0,0.4) 100%);
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);
+      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 52%,rgba(0,0,0,0.4) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+      opacity: 1;
+    }
+    
+    .card-media-object-tag {
+      background-color: #fff;
+      border-radius: 2px;
+      padding: 2px 7px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    
+    .card-media-object-social-list {
+      bottom: 4px;
+      left: 10px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      z-index: 20;
+    }
+    
+    .card-media-object-social-list li {
+      border-radius: 50%;
+      display: inline-block;
+      height: 30px;
+      margin-right: 6px;
+      opacity: 0;
+      overflow: hidden;
+      transform: translateY(5px);
+      transition: all 300ms ease-out;
+      width: 30px;
+    }
+    
+    .card-media:hover .card-media-object-social-list li {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .card-media-object-social-list li:nth-child(1) {
+      transition-delay: 0;
+    }
+    .card-media-object-social-list li:nth-child(2) {
+      transition-delay: 75ms;
+    }
+    .card-media-object-social-list li:nth-child(3) {
+      transition-delay: 150ms;
+    }
+    
+    .card-media-object-social-list-item-additional {
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 12px;
+      padding-top: 7px;
+      text-align: center;
+    }
+    
+    .card-media-body {
+      background-color: #fff;
+      float: left;
+      height: 100%;
+      padding: 12px 15px;
+      position: relative;
+      width: 65%;
+    }
+    
+    .card-media-body-top {
+      display: block;
+    }
+    
+    .card-media-body-top-icons {
+      margin-top: -2px;
+      opacity: 0;
+      transition: all 300ms ease-out;
+      transform: translateY(-5px);
+    }
+    
+    .card-media:hover .card-media-body-top-icons {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .card-media-body-top-icons > svg {
+      cursor: pointer;
+      margin-left: 10px;
+      transition: all 300ms ease-out;
+    }
+    
+    .card-media-body-top-icons > svg:hover {
+      fill: #444;
+    }
+    
+    .card-media-body-heading {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    .card-media-body-supporting-bottom {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      opacity: 1;
+      padding: 0 15px;
+      transition: all 300ms ease-out;
+      width: 100%;
+    }
+    
+    .card-media:hover .card-media-body-supporting-bottom {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    
+    .card-media-body-supporting-bottom-text {
+      display: inline-block;
+    }
+    
+    .card-media-body-supporting-bottom-reveal {
+      opacity: 0;
+      transform: translateY(8px);
+      transition: all 300ms ease-out;
+    }
+    
+    .card-media:hover .card-media-body-supporting-bottom-reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .card-media-link {
+      color: #41C1F2;
+      text-decoration: none;
+    }
+    
+    </style>
+    
+
+
+    <div class="wrapper">
+        <div class="slider">
+          <div class="slide">
+            <img src="images/Partners/bj-logo.png" id="partners"/>
+            <img src="images/Partners/fe-logo.png" id="partners"/>
+            <img src="images/Partners/ic-logo.png" id="partners"/>
+            <img src="images/Partners/rb-logo.png" id="partners"/>
+            <img src="images/Partners/ribo-logo.png" id="partners"/>
+          </div>
+          <div class="slide">
+            <img src="images/Partners/bj-logo.png" id="partners"/>
+            <img src="images/Partners/fe-logo.png" id="partners"/>
+            <img src="images/Partners/ic-logo.png" id="partners"/>
+            <img src="images/Partners/rb-logo.png" id="partners"/>
+            <img src="images/Partners/ribo-logo.png" id="partners"/>
+          </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+    
+
+        <div class="dwn-section">
+            <a href="#" class="f-logo">MDIO</a>
+            <ol>
+                <h1>Quem Somos</h1>
+                <li><a href="#">Rotaract Brasil</a></li>
+                <li><a href="#">Estruturaa</a></li>
+                <li><a href="#">Galeria de Presidentes</a></li>
+                <li><a href="#">Reconhecimento</a></li>
+            </ol>
+
+            <ol>
+                <h1>Comunicados</h1>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Eventos</a></li>
+            </ol>
+
+            <div class="social">
+                <h1>Social</h1>
+                <div class="social-icons">
+                    <a class="fb" href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    <a class="instagram" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a class="linkdin"  href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                    <a class="twt" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a class="youtube" href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        
+
+          <div class="copyright">
+            Copyright © 2020 - Rotaract Brasil. Todos os direitos reservados.
+          </div>
+    </footer>
+
+
+    
+
+</body>
+</html>
