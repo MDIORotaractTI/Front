@@ -26,7 +26,7 @@
         </label>
         <input type="checkbox" id="btn">
         <ul>
-            <li><a href="#">INICIO</a></li>
+            <li><a href="index.html">INICIO</a></li>
             <li>
                 <label for="btn-1" class="show">QUEM SOMOS +</label>
                 <a href="#">QUEM SOMOS</a>
@@ -254,6 +254,9 @@
     
     
     <style>
+        nav{
+            z-index: 1000 !important;
+        }
     html {
       box-sizing: border-box;
       font-family: 'Roboto', sans-serif;
@@ -261,13 +264,10 @@
       font-weight: 500;
     }
     
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
-    
     .container-card {
       width: 700px;
-      width:100%
+      width:100%;
+      z-index:-1 !important;
     }
     
     .u-float-right {
