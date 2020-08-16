@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 language: node_js
 node_js:
   - 13
@@ -8,3 +9,17 @@ deploy:
     branch: master
   api_key:
     secure: O56Qb1NCacVUWGXR0v80xgYzZnOxJjEF9VPPsOkPp6l9BO7k6Do2QHLzFbBRWKJnUla87myahupclETTTkq7fnwL72IAF7FUd6fJZ0gPE9GK6dkKTYhl9hEQcqcFi670jfr3DyNsnCWWZU2AWeqdqTIN7xoDrMZevzJ9orL+Pk2sf78mRUxAvkndmdRalnlHpNO/sghADYjVRpWAP0d7pffHgPsjs7PRNXqzT/qPorHqRbwzNFeYnh62AoGF8a0cDMgTi6CAaLuaBT4mMCtPXvrQ+IVEYexGfcuwWLlUjiLr7nDVPl69xxLXOWh+VcW4LSMw3Yb7/xIocw73rPXCZbKb/+ztk6ALvdJ6jcxU7WHPVlPEV6hd34nVu+uSnuCPWuswgVo8DgTlt3t85p7H1AF9nJzG35wau/cAqK8eCgY/uTkfISD4vQjyOSbY9rXTrv4zEkkS2gnUwlgjLQNA/XGE9qqUSMnBfa0sElltX2R1L9EZhFWDwmPXTebLuzqv1jcfMHD9DNOFj3DMnXYQq5N8onH41yh6UyAqR3QWaTWTUEdmzgwgGMI6oFcsJRta6Vzn4Sm0gu1arrRZbfb26dc+UIcRtuvXAXFq0QYtI3TDPVXB2PQXylFJoCFCD7oTAsvLqQyP45Xeff6aTlrYfEGvpJ3B3AH19sU+MT/YPEQ=
+=======
+language: node_js
+node_js:
+- 13
+script:
+- echo "skipping tests"
+deploy:
+  provider: heroku
+  app: siterotaract2020
+  on:
+    branch: master
+  api_key:
+    secure: O56Qb1NCacVUWGXR0v80xgYzZnOxJjEF9VPPsOkPp6l9BO7k6Do2QHLzFbBRWKJnUla87myahupclETTTkq7fnwL72IAF7FUd6fJZ0gPE9GK6dkKTYhl9hEQcqcFi670jfr3DyNsnCWWZU2AWeqdqTIN7xoDrMZevzJ9orL+Pk2sf78mRUxAvkndmdRalnlHpNO/sghADYjVRpWAP0d7pffHgPsjs7PRNXqzT/qPorHqRbwzNFeYnh62AoGF8a0cDMgTi6CAaLuaBT4mMCtPXvrQ+IVEYexGfcuwWLlUjiLr7nDVPl69xxLXOWh+VcW4LSMw3Yb7/xIocw73rPXCZbKb/+ztk6ALvdJ6jcxU7WHPVlPEV6hd34nVu+uSnuCPWuswgVo8DgTlt3t85p7H1AF9nJzG35wau/cAqK8eCgY/uTkfISD4vQjyOSbY9rXTrv4zEkkS2gnUwlgjLQNA/XGE9qqUSMnBfa0sElltX2R1L9EZhFWDwmPXTebLuzqv1jcfMHD9DNOFj3DMnXYQq5N8onH41yh6UyAqR3QWaTWTUEdmzgwgGMI6oFcsJRta6Vzn4Sm0gu1arrRZbfb26dc+UIcRtuvXAXFq0QYtI3TDPVXB2PQXylFJoCFCD7oTAsvLqQyP45Xeff6aTlrYfEGvpJ3B3AH19sU+MT/YPEQ=
+>>>>>>> 599f3a7544b4e175dfbb48daec6043e8aea0fb1a

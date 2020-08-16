@@ -1,0 +1,19 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "<!-- Status do TravisCI --> [![Build Status](https://travis-ci.org/MDIORotaractTI/Front.svg?branch=master)](https://travis-ci.org/MDIORotaractTI/Front)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MDIORotaractTI/Front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MDIORotaractTI/Front/issues"
+  },
+  "homepage": "https://github.com/MDIORotaractTI/Front#readme"
+}
