@@ -87,7 +87,7 @@ nav ul li a:hover {
 }
 
 nav ul ul li a:hover {
-    color #d91b5c;
+    color: #d91b5c;
     box-shadow: none;
 }
 
@@ -105,7 +105,6 @@ nav ul li:hover > ul {
     opacity: 1;
     visibility: visible;
 } 
-
 nav ul ul li {
     position: relative;
     margin: 0px;
